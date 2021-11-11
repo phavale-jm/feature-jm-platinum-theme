@@ -1,0 +1,137 @@
+
+/**media query for mobile **/
+@media (min-width: 320px) and (max-width: 540px){
+
+.socialmedia__list {
+  padding: 14px 20px 11px 20px;
+}
+.icon-arrow--right{
+  width: 20px;
+  height: 20px;
+}
+
+}
+/**media query for tab **/
+@media (max-width: 834px){
+.logo__img{
+	display: none;
+}
+.jmlogo__img--mb{
+	display: block !important;
+	width: 52px;
+	height: 24px;
+	margin: 20px 0px;	
+}
+.jmheader__navlist{
+	position: relative !important;
+}
+.hidden__overlay{
+	display: block !important;
+}
+.jmheader__navlist:hover ul.child-menu{
+	display:none !important;
+}
+.submenu__mb .submenu__child{
+	display: block !important;
+}
+.submenu__content{
+	border-bottom: 1px solid #FFFFFF33;
+	opacity: 1;
+	flex : 0 0 25%;
+	padding: 20px 0px;
+}
+.submenu__list{
+	font-family: JMSansMedium ;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.submenu__heading{
+	font-family: JMSansMedium ;
+	font-size: 14px;
+	line-height: 20px;
+	opacity: 0.6;
+	color: #FFFFFF;
+	display: block !important;
+}
+.back__arrow{
+	 background: url(../images/new__jm__images/arrow_back-white.svg);
+	 position: absolute;
+	 display: block;
+	 width: 24px;
+	 height: 24px;
+	 cursor: pointer;
+	 left: 15px;
+}
+.jmheader__navlist {
+    width: 100%;
+    border-bottom: 1px solid #FFFFFF33 !important;
+    opacity: 1;
+}
+.jmlfry__navbar{
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.jmlfry__navbar li {
+   padding: 0px 12px;
+ }
+ .support_agent{
+   display: none !important;
+ }
+ .jmheader__navlist a {
+   color: #fff !important;
+   line-height: 24px;
+ }
+ .jmarrow__right{
+    background: url(../images/new__jm__images/keyboard_arrow_right-white.svg) 0 0 no-repeat transparent;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+	display: block;
+	float: right;
+ }
+ .jm__contact{
+  	background: url(../images/new__jm__images/contact-icon_white.svg) 0 0 no-repeat transparent;
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+}
+.contact__container{
+	display: flex !important;
+	margin-left: 20px;
+}
+.nav__toggler{
+	background: url(../images/new__jm__images/menu-icon.svg) 0 0 no-repeat transparent;
+	width: 24px;
+	height: 24px;
+	display: block;
+	position: absolute;
+	top: 19px;
+	right: 18px;
+	transition: all 0.8s ease;
+}
+.nav__toggler.active{
+background: url(../images/new__jm__images/close_menu_icon.svg) 0 0 no-repeat transparent;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+	display: block;
+	position: absolute;
+	top: 19px;
+	right: 18px;
+	transition: all 0.8s ease;
+
+}
+.jmheader__navbar{
+	max-height: 0px;
+	overflow: hidden;
+	visibility: hidden;
+	transition: all 0.8s ease;
+}
+.jmheader__navbar.open{
+	visibility: visible;
+	transition: all 0.8s ease;
+}
+}

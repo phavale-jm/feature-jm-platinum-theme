@@ -1,0 +1,196 @@
+/* footer css: start */
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    background-color: #1E22AA;
+    color: #fff;
+    padding: 48px 0px 55px 0px;
+}
+.jmfooter__heading{
+    font-size: 16px;
+    line-height: 21px;
+    font-family: JMSansMedium;
+    font-weight: normal;
+    margin: 0px;
+    padding-bottom: 27px;
+}
+.footer-content .jmfooter__list{
+    padding: 0px 0px 27px 0px;
+}
+.footer-content .jmfooter__listlink{
+  font-family: JMSansRegular;
+  color: #C8C8E9;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+.footer-content .jmfooter__listlink:hover {
+  color : #ffffff !important;
+}
+.signup__text{
+  display: block;
+  }
+.jmlfrybtn{
+    background-color: #4347B9;
+    border:none;
+    outline: none;
+    padding: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+.jmlfrybtn--signin{
+	text-transform: uppercase;
+	display: flex;
+    align-items: center;
+}
+.jm__emailinp{
+    padding: 20px 0px 22px 18px;
+    outline:none;
+    border:none;
+}
+.jm__emailinp::placeholder{
+    font-size: 16px;
+}
+.footer__form{
+	display: flex;
+	width: 100%;
+}
+.jmterms{
+    font-size: 12px;
+    padding-top: 15px;
+}
+.jmterms .jmterms__link{
+border-bottom: 1px solid #fff;
+color: #fff !important;
+text-decoration: none;
+}
+.checkbox-container{
+display: flex;
+align-items: center;
+position: relative;
+}
+.checkbox-container input[type="checkbox"]{
+    border: none;
+    outline: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+.checkbox-container label::before{
+   content: url(../images/new__jm__images/check_box_outline_blank.svg);
+   position: relative;
+   right: 2px;
+   top: 9px;
+}
+.checkbox-container input[type="checkbox"]:checked + label::after {
+   content: url(../images/new__jm__images/chechboxright__arrow.png);
+   right: 0px;
+   top: 28px;
+   left: 2px;
+   position: absolute;
+}
+form{
+    padding-top: 15px;
+}
+.list{
+    padding: 0px 15px;   
+}
+.socialmedia__list{
+    background-color: #033333;
+    color: #fff;
+    padding: 11px 40px 14px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+/*.socialmedia__links{
+align-items: flex-end;
+}*/
+ .jmfooter__links{
+  padding: 0px !important;
+}
+.socialicons__img{
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+    
+
+/* footer css: end */
+
+
+@media (max-width: 834px){
+
+.footer-content .jmfooter__lists{
+	flex: 0 0 100%;
+    }
+.footer-content {
+	 padding: 48px 20px 55px 20px;
+	 justify-content: normal;
+     }
+     jmfooter__logo{
+     margn-bottom: 35px;
+     }
+ .jmfooter__lists .footersec__chevicon{
+  position: relative;
+  background: url(../images/new__jm__images/keyboard_arrow_down.svg) no-repeat  transparent; 
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  float: right;
+  cursor: pointer;
+  display: block;
+  transition: 0.8s ease-in-out;
+  }
+  .jmfooter__heading {
+  padding-bottom: 20px;
+  }
+  .jmfooter__lists.open .footersec__chevicon {
+ transform: rotate(180deg);
+ transition: 0.8s ease-in-out;
+ } 
+  .jmfooter__lists{
+  border-bottom: 1px solid #FFFFFF33;
+  width: 100%;
+  margin-bottom: 25px !important;
+  padding-left: 0;
+  padding-right: 0;
+  }
+  .jmfooter__lists .jmfooter__links{
+  max-height: 0; 
+  overflow:hidden; 
+  transition: max-height 1s ease-out;
+  margin-bottom: 0px !important;
+  }
+ .jm__emailinp{
+  padding: 16px 0px 16px 16px;
+  }
+  .jmfooter__lists.open .jmfooter__links{
+   height:auto; 
+   max-height: 500px; 
+   transition: max-height 1s ease-in !important;
+  }
+  .jmemail__label{
+  display: none;
+  }
+  .jmlfrybtn{
+  padding: 19px 18px 14px 18px;
+  }
+  .jmfooter__logo{
+  margin-bottom: 35px;
+  }
+  .signup__text{ 
+  display: block !important;
+  }
+  }
+  
+  @media (min-width: 980px) and (max-width: 1280px){
+  .signup__text{
+  display:none;
+  }
+  }
